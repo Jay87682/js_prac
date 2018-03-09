@@ -17,8 +17,8 @@ function show_prototype(item) {
  *  The 'constructor' attribute of prototype reference to self.
  *  eg.: Player.prototype.constructor => [Function: Player]
  */
-function Player() {};
-show_prototype(Player);
+// function Player() {};
+// show_prototype(Player);
 
 /*
  *  Every object has their own constructor, and constructor
@@ -32,3 +32,43 @@ show_prototype(Player);
 // show_prototype(newPlayer);
 // show_prototype(newPlayer.constructor);
 
+
+/*
+ *  Prototype of primitive types
+ */
+
+/*
+ * Number
+ * Number.prototype => [Number: 0]
+ * Number.__proto__ => [Function], Function prototype
+ */
+// show_prototype(Number);
+
+
+/*
+ * Boolean
+ * Boolean.prototype => [Boolean: false]
+ * Boolean.__proto__ => [Function], Function prototype
+ */
+// show_prototype(Boolean);
+
+/*
+ * Object
+ * Object.prototype => {}, Object prototype
+ * Object.__proto__ => [Function], Function prototype
+ */
+// show_prototype(Object);
+
+/*
+ * Function
+ * Function.prototype => [Function], Function prototype
+ * Function.__proto__ => [Function], Function prototype
+ */
+// show_prototype(Function);
+
+/*
+ * Array
+ * Array.prototype => [], Empty array prototype
+ * Array.__proto__ => [Function], Function prototype
+ */
+// show_prototype(Array);
